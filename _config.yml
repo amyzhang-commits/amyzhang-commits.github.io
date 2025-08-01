@@ -1,0 +1,13 @@
+title: Amy Zhang
+#logo: /assets/img/headshot_circle.png  
+description: |
+  [GitHub](https://github.com/amyzhang-commits)  
+  [LinkedIn](https://www.linkedin.com/in/azhang2262/)  
+  *Contact: youremail@example.com*
+theme: jekyll-theme-minimal
+
+nav:
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
