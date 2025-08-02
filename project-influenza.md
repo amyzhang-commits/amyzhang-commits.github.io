@@ -13,24 +13,32 @@ tags: [Tableau, Python, Geospatial Analysis, Public Health, Data Integration]
 
 ## Project Overview
 
-**Objective:** Identify high-impact times and regions for staffing and vaccination campaigns using flu death trends.
+**Objective:** Identify high-impact times and regions for vaccination and staffing campaigns using historical flu death trends.
 
-**Data:** 
-- CDC Influenza Deaths (2009-2017)
-- U.S. Census Population Estimates (2009-2017)
+**Data Sources:**  
+- CDC Influenza Deaths (2009–2017)  
+- U.S. Census Population Estimates (2009–2017)
 
-**Methods:**
-- Data cleaning, integration, and transformation
-- Grouping, sorting, filtering
-- Exploratory correlation analysis
-- Visual analysis and forecasting in Tableau
-- Narrative storytelling for decision support
+**Methods:**  
+- Data cleaning, integration, and transformation  
+- Exploratory correlation analysis  
+- Visual analysis and forecasting in Tableau  
+- Narrative storytelling for decision support  
 
-**Deliverables:**
-- [Tableau: Influenza_vers1](link-placeholder)
-- [Tableau: Influenza_vers2](link-placeholder)
-- [YouTube: Influenza_vers1](link-placeholder)
+**Deliverables:**  
+- [Tableau: Influenza_vers1](link-placeholder)  
+- [Tableau: Influenza_vers2](link-placeholder)  
 - [YouTube: Influenza_vers2](link-placeholder)
+
+---
+
+## TL;DR
+
+- Flu mortality is highly seasonal and regionally concentrated in the Southern U.S. Adults aged 65+ make up only 10% of the population but account for nearly two-thirds of flu deaths.  
+- When normalized by population, states like California drop in priority, while smaller-population states emerge as higher risk.  
+- A custom severity index (FSPI) and residual-based clustering reveal systemic variation in how states absorb flu burden—indicating that interventions must go beyond mortality counts to account for demographic risk, health system capacity, and social vulnerability.
+
+**Recommendation:** Align flu response efforts with per-capita risk and early signs of healthcare system strain.
 
 ---
 
@@ -38,71 +46,99 @@ tags: [Tableau, Python, Geospatial Analysis, Public Health, Data Integration]
 
 ### 1. Regional & Seasonal Patterns
 
-**Seasonal Trends:**
-- Flu season peaks in winter, with possible spring resurgence
-- Southern U.S. consistently leads in mortality rates
+**Seasonality:**  
+- Flu season peaks in winter, with occasional spring resurgence  
+- The Southern U.S. consistently shows the highest mortality rates
 
-**Note:** Y-axis scaling may exaggerate visual differences in some charts—an important consideration for data integrity.
-
-### 2. Age-Related Vulnerability
-
-**Critical Finding:** Adults 65+ represent only 10% of the population but account for nearly 66% of flu fatalities.
-
-**Geographic Impact:** States with larger 65+ populations show higher total death counts, highlighting the intersection of demographics and public health outcomes.
-
-### 3. Population-Normalized Risk Analysis
-
-**Key Insight:** Total death counts ≠ individual risk levels
-
-**Example:** California leads in total deaths but ranks low in deaths per capita when normalized by population (deaths per 100,000 residents).
-
-**Implication:** Resource allocation decisions must consider both absolute numbers and per-capita risk.
+![Monthly Flu Deaths by Region](assets/img/montly_flu_deaths_region.png)  
+***FIG. A:*** *Average monthly flu deaths by U.S. region.*  
+**Note:** Y-axis scaling may exaggerate differences—consider when interpreting.
 
 ---
 
-## Exploratory Analysis
+### 2. Age-Related Vulnerability
+
+**Critical Insight:** Adults 65+ represent ~10% of the population but account for ~66% of flu fatalities.
+
+![Age-related Vulnerability Pie Charts](assets/img/pie_chart_age_vulnerability.png)  
+***FIG. B:*** *Population age distribution (left) vs. flu mortality age distribution (right).*
+
+**Geographic Impact:** States with larger senior populations show higher total flu deaths, highlighting a demographic risk layer.
+
+![Scatterplot of Population 65+ v. Total Deaths (2009–2017)](assets/img/scatterplot_age_vulnerability.png)  
+***FIG. C:*** *Scatterplot showing correlation between 65+ population and total flu deaths.*
+
+---
+
+### 3. Population-Normalized Risk Analysis
+
+**Key Insight:** High total death counts ≠ high individual risk.
+
+**Example:**  
+California leads in total deaths but ranks low in flu deaths per 100K residents when adjusted for population.
+
+![Choropleth Map Normalizing Flu Deaths by Population Size](assets/img/choropleth_map_normalize_flu_deaths.png)  
+***FIG. D:*** *Choropleth of flu deaths per capita (shading), with symbol size showing total deaths. High population states like California appear lower-risk when normalized by population.*
+
+**Implication:** Effective resource allocation must weigh both absolute numbers and population-adjusted risk.
+
+---
+
+## Bonus: Exploratory Modeling
 
 ### 1. Flu Severity Parsing Index (FSPI)
 
-**Innovation:** Domain-aware proxy for healthcare system context
+**What It Is:**  
+A custom metric to flag states where flu deaths among seniors (65+) are disproportionately high relative to overall mortality.
 
-**Formula:** FSPI = 65+ death rate ÷ overall population death rate
+**Formula:**  
+`FSPI = Death rate (65+) ÷ Overall death rate`
 
-**Benchmark Logic:** In typical systems, 65+ death rate should exceed overall death rate
+**Why It Matters:**  
+In a typical system, seniors face higher risk—but extreme ratios may signal systemic strain, delayed care, or underserved populations.
 
-**Application:** 
-- Map FSPI against senior death rate to flag unusual patterns
-- Use residuals from trendline as proxy signal for systemic stress or resilience
+**How It Was Used:**
+- Mapped FSPI vs. 65+ death rate
+- Analyzed residuals to flag overperformance or underperformance
 
-**Limitations:** Only 9 annual data points per state—insufficient for consistent trend tracking
+**Examples:**
+- **Alaska** shows the highest FSPI—indicating potential system strain  
+- **Florida** has high death counts but a low residual—suggesting stronger-than-expected performance
 
-**Value:** Serves as hypothesis-generation tool for identifying state-specific intervention priorities
+![Flu Severity Parsing Index](assets/img/fspi.png)  
+***FIG. E:*** *Scatterplot of FSPI vs. 65+ death rate. Alaska, Florida, and California stand out—but for different reasons.*  
+
+> **Note:** FSPI is a hypothesis-generation tool—not a forecast model. Based on 9 years of data per state.
+
+---
 
 ### 2. Query Clusters
 
-**Approach:** Hand-crafted clustering using 2D feature space
+**Approach:**  
+Manual clustering in 2D feature space for interpretability.
 
-**Method:** 
-- Plotted FSPI against its residual
-- Sized points by state population
-- Revealed interpretable, cross-regional groupings
+**Methodology:**  
+- Plot FSPI vs. residual  
+- Size points by population  
+- Surface cross-regional groupings (e.g., high-density metro vs. rural profiles)
 
-**Innovation:** Enables "informed random sampling" for hypothesis generation, moving beyond simple geographic aggregation
+**Innovation:** Enables "informed random sampling"—a more nuanced alternative to basic geographic grouping.
 
-**Outcome:** Visual patterns suggest new, data-driven approaches to query healthcare context diversity
+![Query Clusters](assets/img/query_clusters.png)  
+***FIG. F:*** *Average FSPI vs. Residual, sized by state population. Visual clusters suggest different structural profiles across states.*
 
 ---
 
 ## Recommendations
 
-### 1. Synchronize National Vaccination Campaigns
-Adjust support regionally based on death rates per 100K population. Prioritize the Southern region, which shows both elevated death rates and higher average monthly flu mortality.
+### 1. Synchronize National Vaccination Campaigns  
+Align campaign intensity with deaths per 100K residents. Prioritize the Southern region, which shows elevated total deaths and sustained monthly mortality.
 
-### 2. Broaden Priority Metrics Beyond Mortality
-Examine patient volume and capacity, not just mortality rates. The medical agency should staff facilities that struggle to manage all flu cases, not only the most severe outcomes.
+### 2. Broaden Metrics Beyond Mortality  
+Incorporate metrics for hospital strain (e.g., patient volume, surge capacity). Target staffing not just where deaths are highest, but where systems are overwhelmed.
 
-### 3. Expand Vulnerability Criteria Beyond Age
-Integrate additional population segmentation beyond age—such as health insurance status or socioeconomic indicators. Spatial analysis of uninsured populations could refine resource allocation and staffing priorities.
+### 3. Refine Vulnerability Models  
+Factor in socioeconomic indicators (e.g., insurance coverage, income levels) alongside age. This enables a more equitable and effective resource allocation model.
 
 ---
 
