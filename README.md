@@ -1,13 +1,13 @@
 ## About
 
-Hello! I’m Amy. I came to data analytics sideways—through music, architecture, and the patterns woven throughout both. What I love most is the moment when a dataset stops being abstract and its relationships become something like an instrument: playable, knowable, subtly expressive with its own motifs and themes. Invariably, every data structure tells a deeper story about the system that created it—its habits, its blind spots, its possibilities. Below are some of the projects I’ve pushed to the limit over the last year—curious, stubborn--all in all, committed. In return, each one pushed me to listen in more closely, discerning the contours of next steps from the trace of events.  
+Hi! I’m Amy. I spiraled my way into data analytics--through music, architecture, and all the patterns in between. What I love most is the moment when a dataset stops being abstract and its relationships become something like an instrument: playable, knowable, subtly expressive, with emergent motifs and themes. Invariably, every data structure tells a deeper story about the system that created it—its habits, its blind spots, its possibilities. Below are some of the projects I’ve pushed to the limit over the past year—curious, stubborn..._committed_, from repo to presentation runtime. In return, each one pushed me to listen in more closely, discerning the contours of next steps from the trace of events. Thanks for stopping by!  
 
 ---
 
 ## Education
 - Machine Learning Specialization | CareerFoundry (_Summer 2025_)
 - Data Analytics Certificate | CareerFoundry (_Spring 2025_)
-- Dance Accompaniment Training | Mark Morris Dance School, NYC
+- Dance Accompaniment Intensive | Mark Morris Dance School, NYC
 - M.Phil, Architecture Theory and History | Columbia GSAPP, NYC					       		
 
 <br>
@@ -16,53 +16,58 @@ Hello! I’m Amy. I came to data analytics sideways—through music, architectur
 
 ## Work Experience
 
-📄 [Download my resume](#) *(PDF link placeholder for now)*
+📄 [Resume](#) *(PDF link placeholder for now)*
 
 ---
-
 ## Projects
 
-A selection of work exploring data through multiple lenses: from business intelligence and user behavior to public infrastructure, climate resilience, and machine learning experiments.  
-Each project emphasizes different skills — from SQL and Python pipelines to research design and storytelling.
+A selection of projects exploring data through multiple lenses—from user behavior and business intelligence to public infrastructure, climate resilience, and machine learning experiments.
 
 ---
 
 ### 🌍 Public Policy & Infrastructure
-Description: Applied analytics in public health, infrastructure, and social planning.
+**Description:** Applied analytics in public health, infrastructure, and social planning.
 
-- [**Power Plant Water Usage Anomaly Detection**](project-powerplants.md)  
-  _Capstone project using unsupervised learning to detect suspicious withdrawals_
+- [**Electricity Grid Water Usage Anomaly Detection**](project-powerplants.md)  
+  _(June 2025)_  
+  _Independent capstone project assessing public water data quality and identifying potential outliers in power plant usage_
 
-- [**Historical Influenza Patterns & Surveillance**](project-influenza.md)  
-  _EDA + geospatial analysis of 20th-century pandemic data_
+- [**Historical Influenza Patterns in the U.S.: Preparing for the Flu Season**](project-influenza.md)  
+  _(November 2024)_  
+  _EDA and geospatial analysis of influenza mortality in the U.S. (2009–2017), with recommendations for medical staffing agencies_
 
 ---
 
 ### 📊 Business Intelligence
-Quick description: Data-driven insights for product optimization, churn prediction, user behavior, and dashboards.
+**Description:** Data-driven insights for product optimization, churn prediction, user behavior, and customer segmentation.
 
 - [**Instacart Market Basket Analysis**](project-instacart.md)  
-  _SQL + Tableau dashboarding + clustering to understand user patterns_
+  _(January 2025)_  
+  _EDA, feature engineering, and behavioral analysis of online shoppers using Python_
 
-- [**GameCo User Retention**](project-gameco.md)  
-  _Cohort analysis + KPIs for freemium model gaming_
+- [**GameCo Regional Marketing Strategy**](project-gameco.md)  
+  _(September 2024)_  
+  _Descriptive sales analysis and visual strategy recommendations for regional marketing budget allocation_
 
-- [**Rockbuster Video**](project-rockbuster.md)  
-  _Data strategy and BI reporting for a fictional Netflix competitor_
+- [**Rockbuster Stealth LLC**](project-rockbuster.md)  
+  _(December 2024)_  
+  _SQL and Tableau dashboard development for a potential Netflix competitor_
 
 - [**Bank Churn Prediction**](project-bankchurn.md)  
-  _Logistic regression + insight reporting for user churn modeling_
+  _(February 2025)_  
+  _Manual decision tree modeling and insights report for predicting user churn_
 
 ---
 
-### 🧠 Machine Learning & Experimental
-Description: ML applications, pedagogical walkthroughs, and speculative design.
+### 🦾💪 Machine Learning & Experimental
+**Description:** ML applications, pedagogical walkthroughs, and speculative design.
 
-- [**Climate Wins: Part I (Intro to ML)**](project-climatewins1.md)  
-  _Beginner-friendly walkthrough of modeling wins in climate funding_
+- [**ClimateWins: Part I (Intro to ML)**](project-climatewins1.md)  
+  _(June 2025)_  
+  _Comparison of supervised learning models for predicting weather conditions (Linear Regression, Artificial Neural Network, K-Nearest Neighbors, Decision Tree)_
 
-- [**Climate Wins: Part II (Modeling + Thought Experiments)**](project-climatewins2.md)  
-  _Random forest, interpretability, and applied design fiction_
+- [**ClimateWins: Part II (Modeling Experiments: Predicting Rain and Climate Drift)**](project-climatewins2.md)  
+  _(August 2025)_  
+  _Random forests with hyperparameter optimization and time-aware train/test split, emphasizing interpretability and strategic feature engineering_
 
----
 
