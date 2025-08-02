@@ -1,6 +1,6 @@
 ## About
 
-Hi! I’m Amy. I spiraled my way into data analytics--through music, architecture, and all the patterns in between. What I love most is the moment when a dataset stops being abstract and its relationships become something like an instrument: playable, knowable, subtly expressive, with emergent motifs and themes. Invariably, every data structure tells a deeper story about the system that created it—its habits, its blind spots, its possibilities. Below are some of the projects I’ve pushed to the limit over the past year—curious, stubborn..._committed_, from repo to presentation runtime. In return, each one pushed me to listen in more closely, discerning the contours of next steps from the trace of events. Thanks for stopping by!  
+Hi! I’m Amy. I spiraled my way into **data analytics** through music, architecture, and all the patterns in between. What I love most is the moment when a dataset stops being abstract and its relationships become something like **an instrument**: playable, knowable, subtly expressive, with emergent motifs and themes. Invariably, every data structure tells a deeper story about the system that created it—its habits, its blind spots, its possibilities. Below are the projects I’ve pushed to the limit over the past year—curious, stubborn...**_committed_**, from repo to presentation runtime. In return, each one pushed me to listen in more closely, discerning the contours of next steps from the trace of events. Thanks for stopping by!  
 
 ---
 
