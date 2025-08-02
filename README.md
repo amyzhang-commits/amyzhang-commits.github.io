@@ -1,18 +1,16 @@
 ## About
 
-HellooOOooOooOOo  
-I'm Amy.
-
-I'm deeply committed to empathizing with data and connecting with humans — especially where the two intersect.
+Hello! I’m Amy. I came to data analytics sideways—through music, architecture, and the patterns woven throughout both. What I love most is the moment when a dataset stops being abstract and its relationships become something like an instrument: playable, knowable, subtly expressive with its own motifs and themes. Invariably, every data structure tells a deeper story about the system that created it—its habits, its blind spots, its possibilities. Below are some of the projects I’ve pushed to the limit over the last year—curious, stubborn--all in all, committed. In return, each one pushed me to listen in more closely, discerning the contours of next steps from the trace of events.  
 
 ---
 
 ## Education
+- Machine Learning Specialization | CareerFoundry (_Summer 2025_)
+- Data Analytics Certificate | CareerFoundry (_Spring 2025_)
+- Dance Accompaniment Training | Mark Morris Dance School, NYC
+- M.Phil, Architecture Theory and History | Columbia GSAPP, NYC					       		
 
-- **Machine Learning Specialization** (CareerFoundry, *Summer 2025*)
-- **Data Analytics Certificate** (CareerFoundry, *Spring 2025*)
-- **M.Phil**, Architecture Theory and History — Columbia GSAPP  
-- **M.A**, Ethnomusicology — Columbia University
+<br>
 
 ---
 
@@ -65,9 +63,6 @@ Description: ML applications, pedagogical walkthroughs, and speculative design.
 
 - [**Climate Wins: Part II (Modeling + Thought Experiments)**](project-climatewins2.md)  
   _Random forest, interpretability, and applied design fiction_
-
-- [**Fraud Detection**](project-fraud.md)  
-  _Feature engineering + classification for identifying suspicious transactions_
 
 ---
 
