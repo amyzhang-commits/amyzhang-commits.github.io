@@ -24,7 +24,16 @@ tags: [Python, Market Basket Analysis, Customer Segmentation, E-commerce, Behavi
 - [GitHub: Python_InstacartAnalysis](link-placeholder)
 
 ---
+## TL;DR
 
+- Shopper behavior varies sharply by time of day—non-peak hours (early morning, late night) drive higher-value carts than midday.
+- Reorder behavior spikes after 40+ orders, signaling a shift from exploration to loyalty; segmenting by reorder patterns reveals distinct shopper types.
+- Low-income customers under-purchase staple items, suggesting price sensitivity; snack purchases dominate instead.
+- A custom index flags departments with high revenue and low loyalty—ideal for novelty-driven promotion strategies.
+
+**Recommendation:** Time marketing to shopper segments, reward loyalty after key thresholds, address price sensitivity for staple foods, and promote high-revenue/low-reorder departments to drive discovery.
+
+---
 ## Key Insights
 
 ### 1. Time-Based Revenue Patterns
@@ -34,6 +43,9 @@ tags: [Python, Market Basket Analysis, Customer Segmentation, E-commerce, Behavi
 - **Evening Shoppers** 
 - **Night Owls**
 
+![Time-Based Revenue Patterns](assets/img/insta_time_based_revenue_patterns.png)
+***FIG. A:***  *Overlaying average cart size and product price by hour reveals key revenue windows—when shoppers are both buying more and spending more. These peak periods help define shopper segments by time of day.*
+
 **Strategic Insight:** These non-peak shopper segments drive growth with larger carts and higher-value items. Timing matters—targeted non-peak hours outperform midday in revenue impact.
 
 ### 2. Loyalty & Reorder Behavior
@@ -41,6 +53,9 @@ tags: [Python, Market Basket Analysis, Customer Segmentation, E-commerce, Behavi
 **Critical Threshold:** Reorder rates rise sharply after 40-50 orders.
 
 **Behavioral Shift:** Customers transition from exploration phase to habitual buying patterns.
+
+![Scatterplot of Reordering Behavior vs. Max Orders](assets/img/insta_reordering_behavior.png)
+***FIG. B:***  *Scatterplot shows how reorder rates evolve as customers place more orders. Shopper types—'Creature of Habit', 'Adventurous Shopper', and 'Open to Suggestion'—highlight behavioral thresholds tied to loyalty.*
 
 **Business Impact:** Loyalty builds predictable, high-reorder purchase patterns that can be leveraged for inventory planning and personalized marketing.
 
@@ -54,9 +69,12 @@ tags: [Python, Market Basket Analysis, Customer Segmentation, E-commerce, Behavi
 - **Staples (frozen, dairy, pantry):** Under-purchased by low-income groups—indicates possible price sensitivity
 - **Beverages:** Consistent purchasing across all income groups
 
+![Income-Driven Department Trends Heatmap](assets/img/insta_heatmap_purchasing_matrix.png)
+***FIG. C:***  *Heatmap of department-level purchasing, normalized per user, uncovers behavioral trends across income levels—revealing category preferences and price sensitivity that volume-based metrics can miss.*
+
 ---
 
-## Exploratory Analysis
+## Bonus: Exploratory Modeling
 
 ### Department Opportunity Index (Multifactor)
 
@@ -68,6 +86,12 @@ tags: [Python, Market Basket Analysis, Customer Segmentation, E-commerce, Behavi
 - **Average revenue per order** → financial value
 - **Reorder rate** → habit/loyalty indicator  
 - **Non-reorder rate** → novelty/impulse potential
+
+![Department Opportunity Index Heatmap](assets/img/insta_dept_opportunity_index.png)
+***FIG. D:*** *Which departments drive revenue—and which are ripe for discovery? This index blends three factors: (1) average revenue per order, (2) reorder rank, and (3) non-reorder rank. A **large positive rank gap** (more non-repeat purchases) flags novelty-driven departments ideal for promotions and product discovery. A **negative gap** highlights habit-driven categories—strong candidates for loyalty and retention strategies.  
+**In short:** this index helps prioritize departments that are either:
+- High-value and ready for exploration, or  
+- Consistent performers that thrive on repeat business.*
 
 **Strategic Application:** Use insights to design growth campaigns targeting underutilized but high-value departments.
 
