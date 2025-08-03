@@ -23,6 +23,16 @@ tags: [Excel, Descriptive Analysis, Market Research, Gaming Industry]
 - Created visualizations to communicate key insights
 
 ---
+## TL;DR
+
+- GameCo’s global sales have declined since 2008, despite regional market growth in the EU and Other regions.  
+- Japan displays unique genre preferences that diverge from global trends.  
+- Shooter games are rising globally, while Japan sees increasing popularity in Action-Adventure-RPG titles.  
+- Cross-genre strategies show promise but require deeper behavioral data to validate.  
+
+**Recommendation:** Focus marketing efforts in the EU and Other regions, explore genre-targeted strategies in Japan, and pursue genre blending only with more robust consumer behavior data.
+
+---
 
 ## Key Insights
 
@@ -32,9 +42,15 @@ EU and Other regions show consistent growth since 1980, while Japan and the US h
 
 **⚠️ Critical Finding:** Despite certain regional gains, GameCo's gross sales have been declining since 2008.
 
+![Line Graph of Market Share by Region](assets/img/gameco_market_share_by_region.png)  
+***FIG. A:*** *Longitudinal view of market share by region. Note GameCo's declining global sales post-2008.*
+
 ### 2. Regional Genre Preferences (1980-2016)
 
 All regions show similar trends, apart from Japan. Distinct genre preferences can inform targeted marketing strategies.
+
+![Regional Genre Preferences](assets/img/gameco_regional_genre_scatter.png)  
+***FIG. B:*** *Scatterplots compare each region’s average sales to global genre averages. NA, EU, and Other closely mirror global trends; Japan’s genre preferences diverge significantly.*
 
 **Key Observation:** Japan demonstrates unique genre preferences that diverge from global patterns.
 
@@ -43,9 +59,12 @@ All regions show similar trends, apart from Japan. Distinct genre preferences ca
 **Shooter Games:** ⬆️ Rising globally on aggregate  
 **Action-Adventure-RPG:** ⬆️ Rising specifically in Japan, despite global decline
 
+![Bar Graphs of Regional Market Breakdown by Genre](assets/img/gameco_regional_genre_bar.png)  
+***FIG. C:*** *Genre breakdown by region. Japan skews toward Action-Adventure-RPGs; global markets favor Shooters.*
+
 ---
 
-## Exploratory Analysis
+## Bonus: Exploratory Analysis Attempt
 
 ### Marketing Opportunity: Combining Genres
 
@@ -56,6 +75,9 @@ All regions show similar trends, apart from Japan. Distinct genre preferences ca
 **Approach:** Attempted to reallocate genre popularity using historical platform sales to suggest genre fusion strategies.
 
 **Hypothesis:** Blending genres could drive sales through consumer crossover.
+
+![3D Bar Graph: Sales Forecast for Genre Crossover](assets/img/gameco_3d_bar_graph.png)  
+***FIG. D:*** *Simulated impact of genre crossover (e.g., Action-Adventure-RPG) on sales, based on platform-level trends.*
 
 **Limitations Identified:**
 - Flawed assumption that sales trends would continue
