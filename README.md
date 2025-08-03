@@ -5,10 +5,15 @@ Hi! I’m Amy. I spiraled my way into **data analytics** through music, architec
 ---
 
 ## Education
-- Machine Learning Specialization | CareerFoundry (_Summer 2025_)
-- Data Analytics Certificate | CareerFoundry (_Spring 2025_)
-- Dance Accompaniment Intensive | Mark Morris Dance School, NYC
-- M.Phil, Architecture Theory and History | Columbia GSAPP, NYC					       		
+
+- **Machine Learning Specialization**  
+  CareerFoundry  _(Summer 2025)_
+- **Data Analytics Certificate**  
+  CareerFoundry  _(Spring 2025)_
+- **Dance Accompaniment Intensive**  
+  Mark Morris Dance School, NYC
+- **M.Phil, Architecture Theory and History**  
+  Columbia GSAPP, NYC				       		
 
 <br>
 
@@ -62,11 +67,11 @@ A selection of projects exploring data through multiple lenses—from user behav
 ### 🦾💪 Machine Learning & Experimental
 **Description:** ML applications, pedagogical walkthroughs, and speculative design.
 
-- [**ClimateWins: Part I (Intro to ML)**](project-climatewins1.md)  
+- [**ClimateWins: Part I (Intro to ML)**](project-climatewins.md)  
   _(June 2025)_  
   _Comparison of supervised learning models for predicting weather conditions (Linear Regression, Artificial Neural Network, K-Nearest Neighbors, Decision Tree)_
 
-- [**ClimateWins: Part II (Modeling Experiments: Predicting Rain and Climate Drift)**](project-climatewins2.md)  
+- [**ClimateWins: Part II (Modeling Experiments: Predicting Rain and Climate Drift)**](project-climatewins-advanced.md)  
   _(August 2025)_  
   _Random forests with hyperparameter optimization and time-aware train/test split, emphasizing interpretability and strategic feature engineering_
 
