@@ -35,9 +35,9 @@ tags: [Python, SQL, Machine Learning, Anomaly Detection, Environmental Data, Pub
 - **Some plants report physically impossible values**, indicating deeper quality issues beyond just missingness.
 - **A custom suspicion score reveals high-risk categories** (e.g., complex configurations, solar thermal, nuclear).
 - **K-Means clustering flagged suspicious activity zones** worth deeper monitoring.
-- **Next Steps:** Build classifier using suspicion score, cross-check against USGS data, and prototype real-time anomaly detection.
 
-(Details and visuals follow below.)
+**Recommendation**: Build classifier using suspicion score, cross-check against USGS data, and prototype real-time anomaly detection.
+
 ---
 
 ## Key Insights
