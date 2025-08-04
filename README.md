@@ -2,15 +2,10 @@
 
 Hi! I’m Amy.  
 🌀 I spiraled into **data analytics** through music, architecture, and the manifold patterns in between.  
-
-What I love most is the moment a dataset stops feeling abstract and becomes become something like **an instrument**—playable, knowable, subtly expressive, with emergent motifs and themes.  
-
-The projects below are ones I’ve pushed to the limit over the past year—curious, stubborn, **committed, from repo to runtime**. In return, each one pushed me to listen in more closely, discerning the contours of next steps from the trace of events. 
-
+What I love most is the moment a dataset stops feeling abstract and becomes become something like **an instrument**—playable, knowable, subtly expressive, with emergent motifs and themes. The projects below are ones I’ve pushed to the limit over the past year—curious, stubborn, **committed, from repo to runtime**. In return, each one pushed me to listen in more closely, discerning the contours of next steps from the trace of events. 
 **Data is a language.  
 Language enables connection.  
 Data analytics scaffolds curiosity.**  
-
 Thanks for stopping by; I’m looking forward to connecting and exploring alongside you soon!
 
 
@@ -47,7 +42,7 @@ A selection of projects exploring data through multiple lenses—from user behav
   _(June 2025)_  
   _Independent capstone project assessing public water data quality and identifying potential outliers in power plant usage_
 
-- [**Historical Influenza Patterns in the U.S.: Preparing for the Flu Season** 🦠🏥](project-influenza.md)  
+- [**Historical Influenza Patterns in the U.S.: Preparing for the Flu Season** 💉🏥](project-influenza.md)  
   _(November 2024)_  
   _EDA and geospatial analysis of influenza mortality in the U.S. (2009–2017), with recommendations for medical staffing agencies_
 
@@ -64,7 +59,7 @@ A selection of projects exploring data through multiple lenses—from user behav
   _(September 2024)_  
   _Descriptive sales analysis and visual strategy recommendations for regional marketing budget allocation_
 
-- [**Rockbuster Stealth LLC** 🎬📊](project-rockbuster.md)  
+- [**Rockbuster Stealth LLC** 🎬🎯](project-rockbuster.md)  
   _(December 2024)_  
   _SQL and Tableau dashboard development for a potential Netflix competitor_
 
@@ -77,11 +72,11 @@ A selection of projects exploring data through multiple lenses—from user behav
 ### 🦾💪 Machine Learning & Experimental
 **Description:** ML applications, pedagogical walkthroughs, and speculative design.
 
-- [**ClimateWins: Part I (Intro to ML)** ☁️🤖](project-climatewins.md)  
+- [**ClimateWins: Part I (Intro to ML)** 🌦️🤖](project-climatewins.md)  
   _(June 2025)_  
   _Comparison of supervised learning models for predicting weather conditions (Linear Regression, Artificial Neural Network, K-Nearest Neighbors, Decision Tree)_
 
-- [**ClimateWins: Part II (Modeling Experiments: Predicting Rain and Climate Drift)** 🌧️📉](project-climatewins-advanced.md)  
+- [**ClimateWins: Part II (Modeling Experiments: Predicting Rain and Climate Drift)** ☔️📉](project-climatewins-advanced.md)  
   _(August 2025)_  
   _Random forests with hyperparameter optimization and time-aware train/test split, emphasizing interpretability and strategic feature engineering_
 
