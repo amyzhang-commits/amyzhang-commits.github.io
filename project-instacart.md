@@ -21,7 +21,7 @@ tags: [Python, Market Basket Analysis, Customer Segmentation, E-commerce, Behavi
 - Python for data cleaning, merging, aggregation, feature engineering, and exploratory visualization
 
 **Deliverables:**
-- [GitHub: Python_InstacartAnalysis](link-placeholder)
+- [GitHub: Instacart Basket Analysis](https://github.com/amyzhang-commits/instacart_basket_analysis)
 
 ---
 ## TL;DR
