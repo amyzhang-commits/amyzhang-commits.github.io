@@ -13,4 +13,4 @@ permalink: /projects/machine-learning/
 
 - [**ClimateWins: Part II (Modeling Experiments: Predicting Rain and Climate Drift)** ☔️📉](project-climatewins-advanced.md)  
   _(August 2025)_  
-  _Random forests with hyperparameter optimization and time-aware train/test split, emphasizing interpretability and strategic feature engineering_
+  _Independent project: random forests with hyperparameter optimization and time-aware train/test split, emphasizing interpretability and strategic feature engineering_
