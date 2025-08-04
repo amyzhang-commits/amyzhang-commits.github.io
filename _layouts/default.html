@@ -29,6 +29,7 @@
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
         line-height: 1.5;
         color: #333;
+        background-color: #fff;
       }
 
       /* Navigation Bar Container */
@@ -39,8 +40,9 @@
         padding: 10px 20px;
         position: fixed;
         top: 0;
-        left: 270px; /* Account for sidebar width */
+        left: 0;
         right: 0;
+        width: 100%;
         background-color: #ffffff;
         border-bottom: 1px solid #ddd;
         z-index: 1000;
@@ -136,133 +138,142 @@
         display: block;
       }
 
-      /* Fixed Sidebar */
-      .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
+      /* Main wrapper - two column layout */
+      .wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 80px 20px 20px 20px; /* Top padding for navbar */
+        display: flex;
+        gap: 40px;
+      }
+
+      /* Left column - Profile section */
+      .profile-section {
         width: 270px;
-        height: 100vh;
-        background-color: #f8f9fa;
-        border-right: 1px solid #ddd;
-        padding: 30px 20px;
-        box-sizing: border-box;
-        overflow-y: auto;
-        z-index: 999;
+        min-width: 270px;
+        flex-shrink: 0;
       }
 
       /* Profile Image - Circular */
-      .sidebar img {
+      .profile-section img {
         width: 120px;
         height: 120px;
         border-radius: 50%;
         object-fit: cover;
-        margin: 0 auto 15px auto;
+        margin: 0 0 15px 0;
         display: block;
         border: 3px solid #ddd;
       }
 
       /* Profile Name */
-      .sidebar h1 {
+      .profile-section h1 {
         font-size: 24px;
         margin: 10px 0 5px 0;
-        text-align: center;
         color: #333;
+        font-weight: 500;
       }
 
       /* Job Title */
-      .sidebar .job-title {
+      .profile-section .job-title {
         font-size: 18px;
-        text-align: center;
         color: #666;
         margin-bottom: 25px;
-        font-weight: 500;
+        font-weight: 400;
+        text-transform: capitalize;
       }
 
       /* Contact Info List */
       .contact-info {
         list-style: none;
         padding: 0;
-        margin: 0;
+        margin: 0 0 20px 0;
       }
 
       .contact-info li {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         display: flex;
         align-items: center;
         font-size: 14px;
       }
 
       .contact-info i {
-        width: 20px;
-        margin-right: 10px;
+        width: 18px;
+        margin-right: 8px;
         color: #666;
-        font-size: 16px;
+        font-size: 14px;
       }
 
       .contact-info a {
-        color: #333;
+        color: #0366d6;
         text-decoration: none;
         transition: color 0.3s ease;
       }
 
       .contact-info a:hover {
-        color: #0366d6;
+        text-decoration: underline;
       }
 
-      /* Description */
-      .sidebar p {
-        margin-top: 20px;
-        font-size: 14px;
-        line-height: 1.4;
+      .contact-info span {
         color: #666;
       }
 
-      /* Main Content Area */
-      .main-content {
-        margin-left: 270px;
-        padding-top: 60px; /* Account for navbar */
-        min-height: 100vh;
+      /* Description */
+      .profile-section .description {
+        font-size: 14px;
+        line-height: 1.4;
+        color: #666;
+        margin-top: 15px;
       }
 
-      .wrapper {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 20px;
+      /* Right column - Main content */
+      .main-content {
+        flex: 1;
+        min-width: 0; /* Allows content to shrink */
       }
 
       /* Mobile Responsiveness */
       @media (max-width: 768px) {
-        .sidebar {
-          width: 100%;
-          height: auto;
-          position: relative;
-          border-right: none;
-          border-bottom: 1px solid #ddd;
-        }
-
         .navbar {
-          left: 0;
-          top: auto;
           position: relative;
+          justify-content: center;
         }
 
-        .main-content {
-          margin-left: 0;
-          padding-top: 0;
+        .wrapper {
+          flex-direction: column;
+          padding-top: 20px;
+          gap: 20px;
         }
 
-        .sidebar img {
-          width: 80px;
-          height: 80px;
+        .profile-section {
+          width: 100%;
+          text-align: center;
+          border-bottom: 1px solid #eee;
+          padding-bottom: 20px;
         }
 
-        .sidebar h1 {
-          font-size: 20px;
+        .profile-section img {
+          width: 100px;
+          height: 100px;
+          margin: 0 auto 15px auto;
         }
 
-        .sidebar .job-title {
+        .profile-section h1 {
+          font-size: 22px;
+        }
+
+        .profile-section .job-title {
           font-size: 16px;
+        }
+
+        .contact-info {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 15px;
+        }
+
+        .contact-info li {
+          margin-bottom: 0;
         }
       }
 
@@ -292,46 +303,6 @@
 
   </head>
   <body>
-    <!-- Fixed Sidebar -->
-    <aside class="sidebar">
-      <!-- Profile Image and Name -->
-      {% if site.logo %}
-      <img src="{{ site.logo | relative_url }}" alt="Profile Photo" />
-      <h1>{{ site.title | default: "Amy" }}</h1>
-      <p class="job-title">Data Analyst</p>
-      {% endif %}
-
-      <!-- Contact Info Section -->
-      <ul class="contact-info">
-        <!-- GitHub -->
-        {% if site.github_username %}
-        <li>
-          <i class="fab fa-github"></i> 
-          <a href="https://github.com/amyzhang-commits" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </li>
-        {% endif %}
-        
-        <!-- LinkedIn -->
-        {% if site.linkedin_username %}
-        <li>
-          <i class="fab fa-linkedin"></i> 
-          <a href="https://linkedin.com/in/azhang2262" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </li>
-        {% endif %}
-        
-        <!-- Email -->
-        {% if site.email %}
-        <li>
-          <i class="fas fa-envelope"></i> 
-          <span>{{ site.email }}</span>
-        </li>
-        {% endif %}
-      </ul>
-
-      <!-- Description -->
-      <p>{{ site.description | default: site.github.project_tagline }}</p>
-    </aside>
-
     <!-- Navigation Bar -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="navbar-content">
@@ -376,14 +347,55 @@
       </div>
     </nav>
 
-    <!-- Main Content Area -->
-    <main class="main-content">
-      <div class="wrapper">
+    <!-- Main wrapper with two-column layout -->
+    <div class="wrapper">
+      <!-- Left Column - Profile Section -->
+      <aside class="profile-section">
+        <!-- Profile Image and Name -->
+        {% if site.logo %}
+        <img src="{{ site.logo | relative_url }}" alt="Profile Photo" />
+        <h1>{{ site.title | default: "Amy" }}</h1>
+        <p class="job-title">Data Analyst</p>
+        {% endif %}
+
+        <!-- Contact Info Section -->
+        <ul class="contact-info">
+          <!-- GitHub -->
+          {% if site.github_username %}
+          <li>
+            <i class="fab fa-github"></i> 
+            <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+          {% endif %}
+          
+          <!-- LinkedIn -->
+          {% if site.linkedin_username %}
+          <li>
+            <i class="fab fa-linkedin"></i> 
+            <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+          {% endif %}
+          
+          <!-- Email -->
+          {% if site.email %}
+          <li>
+            <i class="fas fa-envelope"></i> 
+            <span>{{ site.email }}</span>
+          </li>
+          {% endif %}
+        </ul>
+
+        <!-- Description -->
+        <p class="description">{{ site.description | default: site.github.project_tagline }}</p>
+      </aside>
+
+      <!-- Right Column - Main Content -->
+      <main class="main-content">
         <section>
           {{ content }}
         </section>
-      </div>
-    </main>
+      </main>
+    </div>
 
     <!-- Scripts -->
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
