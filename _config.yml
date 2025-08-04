@@ -1,13 +1,7 @@
-title: Amy Zhang
-#logo: /assets/img/headshot_circle.png  
-description: |
-  [GitHub](https://github.com/amyzhang-commits)  
-  [LinkedIn](https://www.linkedin.com/in/azhang2262/)  
-  *Contact: youremail@example.com*
+title: "Amy Zhang" 
+description: "Data Analyst; emerging Data Scientist"
+logo: "/assets/img/your-profile-photo.jpg"  # <- Update this filename when you upload your photo
+github_username: "amyzhang-commits"
+linkedin_username: "azhang2262"
+email: "[forthcoming]"  # <- This will display exactly as written
 theme: jekyll-theme-minimal
-
-nav:
-  - title: "About"
-    url: /about/
-  - title: "Projects"
-    url: /projects/
