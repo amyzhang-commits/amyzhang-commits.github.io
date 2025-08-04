@@ -73,7 +73,7 @@ Adopt **binary rain risk models** enhanced by **drift detection** and **proxy re
    - Leverage feature correlations to compensate for gaps  
    - Validate robustness under incomplete data conditions  
 
-![Global Radiation Sensor Anomalies](assets/img/cw2_global_radiation_madness.png)  
+![Global Radiation Sensor Anomalies](assets/img/cw2_global_radiation_MADNESS.png)  
 ***FIG. C:***  *Daily global radiation values by station for selected years. From 2020 onwards, many stations show anomalous constant or differently scaled values, prompting truncation of data before 2020.*
 
 ![Precipitation Box-Plot EDA](assets/img/cw2_metrics_station_boxplots.png)  
