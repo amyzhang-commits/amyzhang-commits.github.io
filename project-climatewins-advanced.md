@@ -21,6 +21,9 @@ tags: [Python, Random Forest, Climate Drift, Proxy Modeling, Feature Engineering
 - **Coverage:** 18 weather stations across 10 countries (post data cleaning)
 - **Geographic Scope:** Switzerland, Serbia, Austria, Hungary, Spain, Germany, Ireland, Norway, United Kingdom, Sweden, France, Slovenia
 
+![Geographic Scope](assets/img/cw2_geographic_scope.png)
+***FIG. A:***  *Post-Data Cleaning Geopgrahic Coverage*
+
 **Three Core Experiments:**
 1. **From Rainfall to Rainfall Risk** - Binary target transformation for station-level prediction
 2. **Derived Drift** - Climate instability detection using time-aware validation
@@ -37,6 +40,9 @@ tags: [Python, Random Forest, Climate Drift, Proxy Modeling, Feature Engineering
 - VALENTIA: Single 90mm spike (valid but distributionally extreme)
 - Other stations: Max ~14mm/day (implausibly low for regional norms)
 - No safe scaling method without major assumptions
+
+![Precipitation Box-Plot EDA](assets/img/cw2_precipitation_eda.png)
+***FIG. B:***  *Box-plot view of each weather station's precipitation variance; the dataset outlier (from VALENTIA recordings) is highlighted in red*
 
 ### Solution: Binary Reframing
 
@@ -57,9 +63,20 @@ tags: [Python, Random Forest, Climate Drift, Proxy Modeling, Feature Engineering
    - Leverage feature correlations to fill semantic gaps
    - Assess robustness with incomplete data
 
+![Global Radiation Sensor Anomalies](assets/img/cw2_global_radiation_madness.png)
+***FIG. C:***  *Daily Global Radiation Values by Station: plotting select years, it emerges that effectively every station has recordings for 2020 and 2021 that diverge from earlier years, either repeating one single value across the year or, in the case of Tours, appearing to be scaled differently. As 2022 is incompletely recorded for all stations, we truncate the dataset to pre-2020 rather than tackle imputation.*
+
+![Precipitation Box-Plot EDA](assets/img/cw2_metrics_station_boxplots.png)
+***FIG. D:***  *Box-plot view of each weather station's variance per weather metric; stations missing values are highlighted in yellow. The hypothesis is that these stations with incomplete metrics have enough of the others for ML to still ascertain patterns in learning to predict for rain or no rain.*
+
 ### Results: Feature Importance Analysis
 
+We decided to run a Random Forest Model (with Randomized Search optimization wrapper) for each weatherstation, due to its ability to handle non-linear relations and feature importance interpretability.
+
 **Key Findings from Random Forest per Station:**
+
+![Random Forest #1: Feature Importance](assets/img/cw2_model1_fi.png)
+***FIG. E:***  *Feature Importance results from first run of Random Forest*
 
 **Dominant Predictors:**
 - **Air Pressure:** Most predictive feature across majority of stations
@@ -80,6 +97,9 @@ tags: [Python, Random Forest, Climate Drift, Proxy Modeling, Feature Engineering
   - **MUNCHENB:** Poor performance likely due to missing pressure readings
   - **BUDAPEST:** Poor performance despite complete feature set
 
+![Random Forest #1: Macro F-1 Score Distribution Across Stations](assets/img/cw2_model1_macro_boxplot.png)
+***FIG. F:***  *Boxplot showing Macro F-1 Score Distribution across all stations*
+
 **Conclusion:** Per-station models enable tailored learning amid data variability; performance consistency reinforces feasibility of ML-driven rain risk detection from messy legacy datasets.
 
 ---
@@ -92,6 +112,9 @@ Investigation of BUDAPEST's poor performance revealed potential climate drift be
 ### Step 1: Distribution Check
 
 **Method:** Used rainy day counts to probe baseline class balance across stations.
+
+![Stations Ranked by Rainy Day Counts (Colors by Macro F-1 Score)](assets/img/cw2_rainy_day_macro_bar_graph.png)
+***FIG. G:***  *Bar graph showing stations by rainy day counts; bars colored by Macro F-1 Score; the aim is to see whether there is a relationship between rain day volume and predictability.*
 
 **Key Findings:**
 - **VALENTIA & KASSEL:** High rain counts + high Macro-F1
