@@ -78,6 +78,7 @@
         gap: 5px;
         color: #333;
         text-decoration: none;
+        padding: 5px 10px;
       }
 
       .dropdown-toggle:hover,
@@ -91,16 +92,16 @@
         font-size: 0.7em;
       }
 
-      /* Dropdown menu styling */
+      /* Dropdown menu styling - FIXED: Removed gap and improved positioning */
       .dropdown-menu {
         display: none;
         position: absolute;
         right: 0;
+        top: 100%;
         background: #ffffff;
         border: 1px solid #ddd;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         min-width: 220px;
-        margin-top: 5px;
         z-index: 1001;
         border-radius: 3px;
       }
@@ -181,20 +182,21 @@
             >Projects <i class="fas fa-caret-down" aria-hidden="true"></i
           ></a>
           <div class="dropdown-menu" role="menu" aria-label="Projects categories">
+            <!-- FIXED: Changed .html to / for GitHub Pages markdown conversion -->
             <a
-              href="{{ '/projects/public-policy.html' | relative_url }}"
+              href="{{ '/projects/public-policy/' | relative_url }}"
               class="dropdown-item"
               role="menuitem"
               >Public Policy &amp; Infrastructure</a
             >
             <a
-              href="{{ '/projects/business-intelligence.html' | relative_url }}"
+              href="{{ '/projects/business-intelligence/' | relative_url }}"
               class="dropdown-item"
               role="menuitem"
               >Business Intelligence</a
             >
             <a
-              href="{{ '/projects/machine-learning.html' | relative_url }}"
+              href="{{ '/projects/machine-learning/' | relative_url }}"
               class="dropdown-item"
               role="menuitem"
               >Machine Learning &amp; Experimental</a
