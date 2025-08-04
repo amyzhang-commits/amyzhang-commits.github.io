@@ -1,3 +1,4 @@
+---
 layout: default
 title: "Electricity Grid Water Usage Anomaly Detection"
 date: 2025-06-01
