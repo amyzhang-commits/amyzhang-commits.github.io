@@ -50,7 +50,7 @@ tags: [Tableau, Python, Geospatial Analysis, Public Health, Data Integration]
 - Flu season peaks in winter, with occasional spring resurgence  
 - The Southern U.S. consistently shows the highest mortality rates
 
-![Monthly Flu Deaths by Region](assets/img/montly_flu_deaths_region.png)  
+![Monthly Flu Deaths by Region](assets/img/monthly_flu_deaths_region.png)  
 ***FIG. A:*** *Average monthly flu deaths by U.S. region.*  
 **Note:** Y-axis scaling may exaggerate differences—consider when interpreting.
 
