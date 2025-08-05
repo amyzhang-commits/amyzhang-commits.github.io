@@ -26,7 +26,7 @@ tags: [Python, SQL, Machine Learning, Anomaly Detection, Environmental Data, Pub
 
 **Deliverables:**
 - [GitHub Repo (forthcoming)](link-placeholder)
-- [YouTube: *WALKTHROUGH: Hidden Currents – Water Data Quality 2015–2023*](link-placeholder)
+- [YouTube: Project Walkthrough - *Hidden Currents – Water Data Quality 2015–2023*](https://youtu.be/vj5E-Mj2jR8)
 
 ---
 ## TL;DR — What This Found
@@ -55,7 +55,7 @@ tags: [Python, SQL, Machine Learning, Anomaly Detection, Environmental Data, Pub
 - Medium thermal combustion plants rank highest in missing data *per plant*
 - Non-steam plants (excluding solar and nuclear) show high *average* missingness
 
-> **Note:** Apparent label contradictions (e.g., “Non-Steam | Fossil Fuel” vs. “Large Non-Combustion | Fossil Fuel”) reflect mixed-generation facilities and dataset complexity.
+> **Note:** Apparent label contradictions (e.g., “Non-Steam / Fossil Fuel” vs. “Large Non-Combustion / Fossil Fuel”) reflect mixed-generation facilities and dataset complexity.
 
 ![Heatmap of Plant Type by Missingness Ranking](assets/img/missingness_ranking_heatmap.png)  
 **FIG. A.** Heatmap showing plant types ranked across four dimensions of missingness:  
