@@ -1,14 +1,17 @@
 ## About
 
-Hi!👋 I’m Amy.  
-🌀 I spiraled into **data analytics** through music, architecture, and the manifold patterns in between.  
-What I love most is the moment a dataset stops feeling abstract and becomes become something like **an instrument**—playable, knowable, subtly expressive, with emergent motifs and themes. The projects below are ones I’ve pushed to the limit over the past year—curious, stubborn, **committed, from repo to runtime**. In return, each one pushed me to listen in more closely, discerning the contours of next steps from the trace of events. 
+Hi! 👋
+I’m Amy.
 
-**Data is a language.  
-Language enables connection.  
-Data analytics scaffolds curiosity.**  
-Thanks for stopping by; I’m looking forward to connecting and exploring alongside you soon!
+I spiraled into **data analytics** through music, architecture research, and a deep love for the feedback frameworks of cybernetic anthropology (think Bateson’s *Steps to an Ecology of Mind*). What I love most is the moment a dataset stops feeling abstract and starts to feel like **an instrument**—playable, knowable, subtly expressive, revealing emergent motifs and themes.
 
+The projects below are ones I’ve pushed to the limit over the past year—curious, stubborn, **committed, from repo to runtime**. In return, each one pushed *me* to listen more closely, discerning the next steps from the trace of events.
+
+**Data is a language.
+Language enables connection.
+Data analytics scaffolds curiosity.**
+
+Thanks for stopping by. I’m looking forward to exploring, collaborating, and building what comes next—together.
 
 ---
 
