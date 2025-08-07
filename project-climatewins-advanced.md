@@ -30,7 +30,7 @@ tags: [Python, Random Forest, Climate Drift, Proxy Modeling, Feature Engineering
 3. **Munich "Proxycraft"** - Reconstruction of missing data via proxy modeling
 
 **Deliverables:**  
-- [GitHub Repo](https://github.com/amyzhang-commits/climatewins_2_ModelDesign))
+- [GitHub Repo](https://github.com/amyzhang-commits/climatewins_2_ModelDesign)
 
 ---
 ## TL;DR
