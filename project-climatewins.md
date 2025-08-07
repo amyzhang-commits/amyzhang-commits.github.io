@@ -26,16 +26,20 @@ tags: [Python, Machine Learning, Neural Networks, Decision Trees, Climate Data, 
 2. **Machine Learning Foundations & Hypotheses**
 3. **Preliminary ML Model Evaluations**
 
+**Deliverables:**  
+- [GitHub Repo](https://github.com/amyzhang-commits/climatewins_1_ML_intro)  
+
 ---
 
 ## TL;DR
 
-- ClimateWins sought to apply machine learning to European weather data, beginning with a binary classification of “pleasant” vs. “unpleasant” days.  
-- A bias audit revealed major gaps in geographic coverage, feature completeness, and subjective labeling—each with implications for fairness and generalizability.  
-- Despite data limitations, models like Decision Trees and Multi-Layer Perceptrons showed high accuracy, with Decision Trees fully replicating label logic.  
-- Ethical and structural limitations in the dataset are just as critical as model performance—future efforts must prioritize equitable data sourcing, clearer label criteria, and models resilient to climate drift.
+- We applied machine learning to classify daily weather as “pleasant” vs. “unpleasant” using European climate data.  
+- A data audit surfaced gaps in geographic representation, feature completeness, and subjective label construction—each impacting fairness and generalizability.  
+- Despite limitations, interpretable models like Decision Trees and basic MLPs achieved high performance—suggesting learnable patterns even from sparse features.  
+- However, **ethical and structural flaws in the dataset are as critical as model accuracy**—especially under conditions of accelerating climate drift.
 
-**Recommendation:** Use interpretable models for early deployment, but invest in expanding and diversifying datasets to future-proof predictions and support global equity in climate impact modeling.
+**Recommendation:** Start with interpretable models for trust and transparency, but prioritize improved data sourcing, clearer labeling protocols, and techniques that account for shifting climate baselines.
+
 ---
 
 ## I. Data Provenance: Ethical Considerations & Data Integrity
@@ -88,7 +92,7 @@ tags: [Python, Machine Learning, Neural Networks, Decision Trees, Climate Data, 
 ![ML Hypothesis 1: Weather Trends Defy Visual Explanation](assets/img/cw1_ml_hypothesis_1.png)
 ***FIG. E:***  *Traditional analysis shows broad seasonal trends. But short-term fluctuations—intra-annual “spikes and dips”—often defy visual explanation.*
 
-**ML Advantage:** Can analyze complex, nonlinear relationships to identify subtler climate dynamics beyond visual patterns. The deeper interplay of predictive factors can enrich time-based models.
+**ML Hypothesis:** The deeper interplay of predictive factors can enrich time-based models: ML can analyze complex, nonlinear relationships to identify subtler climate dynamics beyond visual patterns. 
 
 ### Hypothesis #2: Weather as Web – Tapping Feature Interdependencies
 **Identified Relationships:**
@@ -100,7 +104,7 @@ tags: [Python, Machine Learning, Neural Networks, Decision Trees, Climate Data, 
 
 ---
 
-**Hypothesis:** ML models can leverage correlated feature clusters as composite predictors, achieving more robust, context-aware forecasts.
+**ML Hypothesis:** ML models can leverage correlated feature clusters as composite predictors, achieving more robust, context-aware forecasts.
 
 ### Hypothesis #3: The Challenge of Temporal Drift in Weather Dynamics
 
@@ -109,7 +113,7 @@ tags: [Python, Machine Learning, Neural Networks, Decision Trees, Climate Data, 
 
 **Observation:** Color-coded outliers reveal emerging "new normals"—rising temperatures and reduced snowfall make older data points increasingly appear as outliers.
 
-**Hypothesis:** ML models trained on historical climate data may underperform as key variables drift over time, reducing predictive accuracy.  
+**ML Hypothesis:** ML models trained on historical climate data may underperform as key variables drift over time, reducing predictive accuracy.  
 
 ---
 
@@ -133,20 +137,18 @@ tags: [Python, Machine Learning, Neural Networks, Decision Trees, Climate Data, 
 **Key Insight:**  
 Global radiation has a stronger linear relationship with temperature, providing a more informative gradient landscape for optimization.
 
-![ClimateWins - Linear Regression Comparison](assets/img/cw1_linreg_MAE_compare.png)  
+![ClimateWins - Linear Regression Comparison](assets/img/cw1_lingreg_MAE_compare.png)  
 ***FIG. H:***  *Comparison of Actual vs. Predicted values for two univariate linear regression models: Time vs. Global Radiation as independent variables.*
 
 ![ClimateWins - Linear Regression Surface Plot Comparison](assets/img/cw1_linreg_surfaceplot_compare.png)  
-***FIG. I:***  *Surface plot analysis:  
-- **Model 1 (Time):** Shorter, misaligned trajectory indicating a flatter, noisier surface with weaker gradient signals.  
-- **Model 2 (Radiation):** Longer, curved path reflecting a directional loss surface with strong gradients guiding toward the minimum.*
+***FIG. I:***  *Surface plot analysis: We see with **Model 1 (Time), a shorter, misaligned trajectory indicating a flatter, noisier surface with weaker gradient signals. **Model 2 (Radiation)** exhibits a longer, curved path reflecting a directional loss surface with strong gradients guiding toward the minimum.*
 
 **Takeaway:**  
 Linear regression, while basic and limited in modeling non-linear real-world relationships, offers a powerful way to visualize the loss landscape and observe step-by-step model adjustments. Additionally, such models can be enhanced through feature engineering or combined in ensembles to improve performance.
 
 ---
 
-### Interim Report Transition
+### Next: Categorical Modeling of Weather Pleasantness
 
 The following three classification models address ClimateWins' interest in the pleasantness dataset. Unlike regression, the output here is categorical (predicting "pleasant" or "unpleasant"), not a continuous variable. To support this, we expand the ML dataset for OSLO to cover all available years.
 
@@ -164,7 +166,8 @@ We compared a basic logistic regression (the simplest ANN, or single-layer perce
 
 **Performance Comparison:**  
 - Logistic regression applies a sigmoid activation to the weighted sum of all inputs, yielding probabilities between 0 and 1.
-- The MLP, with its deeper architecture, saw a persistent gap between training and validation accuracy up to epoch 40, suggesting initial generalization challenges. However, MLP starts and ends higher than LR throughout in validation accuracy. 
+- The MLP, with its deeper architecture, saw a persistent gap between training and validation accuracy up to epoch 40, suggesting initial generalization challenges.
+- However, MLP starts and ends higher than LR throughout in validation accuracy. 
 
 **Result:**  
 *The MLP consistently outperformed logistic regression in both starting performance and ability to generalize.*
