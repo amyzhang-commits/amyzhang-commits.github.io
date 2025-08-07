@@ -82,7 +82,7 @@ Shift from broad strategies to **contextualized response plans** — factoring i
 **Example:**  
 California leads in total deaths but ranks low in flu deaths per 100K residents when adjusted for population.
 
-![Choropleth Map Normalizing Flu Deaths by Population Size](assets/img/choropleth_map_normalize_flu_deaths.png)  
+![Choropleth Map Normalizing Flu Deaths by Population Size](assets/img/choropleth_normalize_flu_deaths.png)  
 ***FIG. D:*** *Choropleth of flu deaths per capita (shading), with symbol size showing total deaths. High population states like California appear lower-risk when normalized by population.*
 
 **Implication:** Effective resource allocation must weigh both absolute numbers and population-adjusted risk.
