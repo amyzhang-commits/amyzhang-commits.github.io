@@ -13,7 +13,8 @@ tags: [Python, SQL, Machine Learning, Anomaly Detection, Environmental Data, Pub
 
 ## Project Overview
 
-**Objective:** Detect patterns and risks in thermoelectric cooling data to inform real-time anomaly detection for water-use reporting.
+**Objective:** Detect patterns and risks in thermoelectric cooling data to inform real-time anomaly detection for water-use reporting
+**Why it matters:** Water stewardship is critical to the energy sector’s efficiency and resilience — especially as climate volatility intensifies. Improving data quality strengthens infrastructure oversight and safeguards public welfare.
 
 **Data:** Public datasets from EIA Forms 860 & 923 (2015–2023)
 
@@ -25,7 +26,7 @@ tags: [Python, SQL, Machine Learning, Anomaly Detection, Environmental Data, Pub
 - Machine Learning: Unsupervised (agglomerative clustering, K-Means)
 
 **Deliverables:**
-- [GitHub Repo (forthcoming)](link-placeholder)
+- [GitHub Repo](https://github.com/amyzhang-commits/eia_water_anomaly_detection)
 - [YouTube: Project Walkthrough - *Hidden Currents – Water Data Quality 2015–2023*](https://youtu.be/vj5E-Mj2jR8)
 
 ---
