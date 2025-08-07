@@ -7,11 +7,7 @@ I spiraled into **data analytics** through music, architecture research, and a d
 
 The projects below are ones I’ve pushed to the limit over the past year—curious, stubborn, **committed, from repo to runtime**. In return, each one pushed *me* to listen more closely, discerning the next steps from the trace of events.
 
-**Data is a language.
-Language enables connection.
-Data analytics scaffolds curiosity.**
-
-Thanks for stopping by. I’m looking forward to exploring, collaborating, and building what comes next—together.
+Thank you for stopping by! Let's explore and build something together.   
 
 ---
 
