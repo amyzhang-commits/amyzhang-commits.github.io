@@ -16,14 +16,6 @@ tags: [Python, Random Forest, Climate Drift, Proxy Modeling, Feature Engineering
 
 **Objective:** Identify three distinct applications of machine learning that can transform ClimateWin's baseline weather dataset into high-leverage insight workflows for weather forecasting and climate change modeling goals.
 
-**Data Source:** European Climate Assessment & Data Set Project (ECA&D)  
-- **Date Range:** 1960-2022 (62 years of daily observations)  
-- **Coverage:** 18 weather stations across 10 countries (post data cleaning)  
-- **Geographic Scope:** Switzerland, Serbia, Austria, Hungary, Spain, Germany, Ireland, Norway, United Kingdom, Sweden, France, Slovenia  
-
-![Geographic Scope](assets/img/cw2_geographic_scope.png)  
-***FIG. A:***  *Geographic coverage of weather stations after data cleaning, spanning Central and Western Europe.*
-
 **Three Core Experiments:**  
 1. **From Rainfall to Rainfall Risk** - Binary target transformation for station-level rain prediction  
 2. **Derived Drift** - Climate instability detection using time-aware validation  
@@ -42,8 +34,18 @@ tags: [Python, Random Forest, Climate Drift, Proxy Modeling, Feature Engineering
 
 **Recommendation:**  
 Adopt **binary rain risk models** enhanced by **drift detection** and **proxy reconstruction** to improve forecast reliability and surface **early indicators of local climate change**.
+
 ---
 
+## Data Source:** European Climate Assessment & Data Set Project (ECA&D)  
+- **Date Range:** 1960-2022 (62 years of daily observations)  
+- **Coverage:** 18 weather stations across 10 countries (post data cleaning)  
+- **Geographic Scope:** Switzerland, Serbia, Austria, Hungary, Spain, Germany, Ireland, Norway, United Kingdom, Sweden, France, Slovenia  
+
+![Geographic Scope](assets/img/cw2_geographic_scope.png)  
+***FIG. A:***  *Geographic coverage of weather stations after data cleaning, spanning Central and Western Europe.*
+
+---
 ## Experiment 1: From Rainfall to Rainfall Risk ☔
 
 ### Problem Statement
