@@ -30,7 +30,7 @@ Thanks for stopping by. I’m looking forward to exploring, collaborating, and b
 
 ## Work Experience
 
-📄 [Resume](#) 
+📄 [Resume](assets/img/CV_082025_AmyZhang.pdf) 
 
 ---
 ## Projects
