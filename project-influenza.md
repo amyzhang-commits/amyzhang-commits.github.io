@@ -6,39 +6,44 @@ categories: [Public Policy, Infrastructure, Healthcare Analytics]
 tags: [Tableau, Python, Geospatial Analysis, Public Health, Data Integration]
 ---
 
-# Historical Influenza Patterns in the U.S.: Preparing for the Flu Season 💉🏥
+# Influenza Patterns in the U.S. (2009–2017): Preparing for Flu Season 💉🏥
 
 **Project Date:** November 2024  
 **Category:** Public Policy & Infrastructure  
 
 ## Project Overview
 
-**Objective:** Identify high-impact times and regions for vaccination and staffing campaigns using historical flu death trends.
+**Objective:** Identify high-impact regions and time periods for vaccination and staffing campaigns by analyzing historical flu mortality trends.
+
+**Why it matters:**  
+Flu response planning often defaults to uniform approaches. By uncovering regional and demographic patterns, we can target interventions more effectively — improving outcomes for vulnerable populations and easing strain on healthcare systems.
 
 **Data Sources:**  
-- CDC Influenza Deaths (2009–2017)  
+- CDC Influenza Mortality Data (2009–2017)  
 - U.S. Census Population Estimates (2009–2017)
 
 **Methods:**  
-- Data cleaning, integration, and transformation  
-- Exploratory correlation analysis  
-- Visual analysis and forecasting in Tableau  
-- Narrative storytelling for decision support  
+- Data cleaning, integration, and normalization  
+- Correlation and regional trend analysis  
+- Tableau dashboards for visual forecasting  
+- Narrative design for policy and decision support  
 
 **Deliverables:**  
-- [Tableau: Influenza_vers1](link-placeholder)  
-- [Tableau: Influenza_vers2](link-placeholder)  
-- [YouTube: Influenza_vers2](link-placeholder)
+- [Tableau Dashboard: Version 1](https://public.tableau.com/views/2_9_InfluenzaPrep/Story3?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
+- [Tableau Dashboard: Version 2](https://public.tableau.com/views/2_10INFLUENZAPREP_4/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
+- [YouTube Walkthrough](https://youtu.be/livbDXP7FJI)
 
 ---
 
-## TL;DR
+## Key Findings
 
-- Flu mortality is highly seasonal and regionally concentrated in the Southern U.S. Adults aged 65+ make up only 10% of the population but account for nearly two-thirds of flu deaths.  
-- When normalized by population, states like California drop in priority, while smaller-population states emerge as higher risk.  
-- A custom severity index (FSPI) and residual-based clustering reveal systemic variation in how states absorb flu burden—indicating that interventions must go beyond mortality counts to account for demographic risk, health system capacity, and social vulnerability.
+- Flu deaths follow strong seasonal patterns with intensified regional concentration in the U.S. South.  
+- Adults 65+ make up only 10% of the population but account for nearly two-thirds of flu deaths.  
+- When normalized per capita, the ranking of high-risk states shifts dramatically — underscoring that vulnerability is not the same as risk exposure.  
+- A custom severity index (FSPI) and residual-based clustering revealed hints of systemic variation in how states absorb flu burden.
 
-**Recommendation:** Align flu response efforts with per-capita risk and early signs of healthcare system strain.
+**Recommendation:**  
+Shift from broad strategies to **contextualized response plans** — factoring in population risk *and* healthcare system capacity.
 
 ---
 
