@@ -14,6 +14,7 @@ tags: [Python, SQL, Machine Learning, Anomaly Detection, Environmental Data, Pub
 ## Project Overview
 
 **Objective:** Detect patterns and risks in thermoelectric cooling data to inform real-time anomaly detection for water-use reporting
+
 **Why it matters:** Water stewardship is critical to the energy sector’s efficiency and resilience — especially as climate volatility intensifies. Improving data quality strengthens infrastructure oversight and safeguards public welfare.
 
 **Data:** Public datasets from EIA Forms 860 & 923 (2015–2023)
