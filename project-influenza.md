@@ -35,7 +35,7 @@ Flu response planning often defaults to uniform approaches. By uncovering region
 
 ---
 
-## Key Findings
+## TL;DR
 
 - Flu deaths follow strong seasonal patterns with intensified regional concentration in the U.S. South.  
 - Adults 65+ make up only 10% of the population but account for nearly two-thirds of flu deaths.  
