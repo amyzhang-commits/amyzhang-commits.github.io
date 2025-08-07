@@ -31,7 +31,7 @@ tags: [Python, SQL, Machine Learning, Anomaly Detection, Environmental Data, Pub
 - [YouTube: Project Walkthrough - *Hidden Currents – Water Data Quality 2015–2023*](https://youtu.be/vj5E-Mj2jR8)
 
 ---
-## Key Findings
+## TL;DR
 
 - **Water data from power plants is riddled with structural gaps**, especially among mid-scale thermal plants.
 - **Some plants report physically impossible values**, indicating deeper quality issues beyond just missingness.
