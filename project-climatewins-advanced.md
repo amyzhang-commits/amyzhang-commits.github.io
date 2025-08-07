@@ -27,7 +27,10 @@ tags: [Python, Random Forest, Climate Drift, Proxy Modeling, Feature Engineering
 **Three Core Experiments:**  
 1. **From Rainfall to Rainfall Risk** - Binary target transformation for station-level rain prediction  
 2. **Derived Drift** - Climate instability detection using time-aware validation  
-3. **Munich "Proxycraft"** - Reconstruction of missing data via proxy modeling  
+3. **Munich "Proxycraft"** - Reconstruction of missing data via proxy modeling
+
+**Deliverables:**  
+- [GitHub Repo](https://github.com/amyzhang-commits/climatewins_2_ModelDesign))
 
 ---
 ## TL;DR
@@ -143,7 +146,7 @@ BUDAPEST’s poor model performance prompted exploration of potential climate dr
 
 **BUDAPEST insight:** Training period concentrated around 12–13 days rain/month spike disappears in test (2007–2019), suggesting climate drift.
 
-![Rainy Day Count Distribution: Raw Counts vs. Normalized for Budapest](assets/img/cw2_budapest_PDF.png)  
+![Rainy Day Count Distribution: Raw Counts vs. Normalized for Budapest](assets/img/cw2_FIX_Budapest.png)  
 ***FIG. I:***  *Rainy day counts for Budapest showing sharp decline in 10-13 rainy days/month in holdout test set (top: raw counts; bottom: normalized density).*
 
 ### Step 3: Smoothed Predictor Testing
@@ -179,7 +182,7 @@ Munich station severely underperformed (Macro F1: 54.4%) due to missing pressure
 ### Solution: Feature-Based Proxy Modeling
 
 **Approach:**  
-1. Trained nonlinear regression models on stations with full features  
+1. Trained nonlinear regression model on stations with full features  
 2. Learned relationships to predict pressure from available data  
 3. Synthesized pressure values for Munich  
 4. Re-ran Random Forest model with reconstructed pressure  
