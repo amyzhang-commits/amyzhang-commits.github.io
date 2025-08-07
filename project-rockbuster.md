@@ -24,8 +24,8 @@ tags: [SQL, Tableau, Customer Segmentation, Streaming Strategy, Database Managem
 - Used subqueries and CTEs for layered insights
 
 **Deliverables:**
-- [Tableau: Rockbuster Data Analysis](link-placeholder)
-- [GitHub: SQL Rockbuster Analysis](link-placeholder)
+- [Tableau: Rockbuster Data Analysis](https://public.tableau.com/views/Rockbusterdataanalysis_1/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- [GitHub: SQL Rockbuster Analysis](https://github.com/amyzhang-commits/rockbuster_analysis)
 
 ---
 
@@ -81,23 +81,26 @@ As tenure increases, rental frequency declines—underscoring a need for lifecyc
 
 ---
 
-## Bonus: Exploratory Analysis
+## Bonus Insight: Toward Tiered Pricing Strategy  
+**Identifying behavioral clusters that could inform subscription tiers and loyalty offers.**
 
-### Product Transition Opportunity: Tiered Plans
-
-**Goal:** Identify behavioral clusters to inform streaming tier strategy.
+To explore future monetization opportunities, we examined rental behavior patterns for signals that might support a tiered pricing model in the upcoming streaming transition.
 
 ![Mode of Rental Rate with Rental Frequency](assets/img/rockbuster_mode_rental_rate.png)  
-***FIG. D:*** *Mode rental rate vs. rental frequency, segmented by customer and market size*
+***FIG. D:*** *Mode rental rate vs. rental frequency, segmented by customer and market size. Red = high frequency; grey = low frequency.*
 
-**Insights:**
-- **$0.99 rentals** dominate across broad geographies
-- **$2.99–$4.99 tiers** cluster in small but active user bases
-- High-frequency users are often geographically isolated—caution in overgeneralizing
+### Highlights:
+- Regions with **$0.99** rental mode extend up to ~60 customers.
+- **$2.99** and **$4.99** mode pricing clusters suggest mid-volume regional segments.
+- High-frequency users tend to be geographically isolated (low on Y-axis, red dots)—suggesting strong but non-scalable usage patterns.
 
-**Limitations:**
-- Mode can obscure nuance (e.g., dominance vs. frequency)
-- Suggested enhancement: combine rental frequency × price mode × segment size
+### Caveats:
+- Mode may not reflect strength of preference—e.g., one additional rental could flip the dominant price.
+- Sample sizes are small; volatility risks overfitting pricing tiers to anomalies.
+- Stronger modeling may emerge by combining **Rental Frequency × Price Mode × Segment Size** into a single weighted cluster.
+
+### Future Opportunity:
+Could clustering or regression methods help identify stable, behavior-based tiers? Further work could integrate churn analysis or forecast retention under different pricing models. 
 
 ---
 
