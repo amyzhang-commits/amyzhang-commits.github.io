@@ -5,7 +5,7 @@ I’m Amy.
 
 I spiraled into **data analytics** through music, architecture research, and a deep love for the feedback frameworks of cybernetic anthropology (think Bateson’s *Steps to an Ecology of Mind*). What I love most is the moment a dataset stops feeling abstract and starts to feel like **an instrument**—playable, knowable, subtly expressive, revealing emergent motifs and themes.
 
-The projects below are ones I’ve pushed to the limit over the past year—curious, stubborn, **committed, from repo to runtime**. In return, each one pushed *me* to listen more closely, discerning the next steps from the trace of events.
+The projects below are ones I’ve pushed to the limit over the past year—curious, stubborn, **committed, from repo to runtime**. In return, each one pushed me to listen more closely, discerning the next steps from the trace of events.
 
 Thank you for stopping by! Let's explore and build something together.   
 
