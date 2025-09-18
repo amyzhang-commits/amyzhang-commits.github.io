@@ -26,7 +26,7 @@ Thank you for stopping by! Let's explore and build something together.
 
 ## Work Experience
 
-📄 [Resume](/assets/img/CV_082025_AmyZhang.pdf) 
+📄 [Resume](/assets/img/CV_20250918_Zhang.pdf) 
 
 ---
 ## Projects
